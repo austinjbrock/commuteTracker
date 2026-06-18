@@ -1,20 +1,18 @@
-// Track every trip to and from
 public class CommuteTracker {
     int totalTrips = 0;
+    int totalMinutes = 0;
 
-    //Add trip
-    public void addTrip(){
+    //Track every trip we take
+    public void addTrip(int minutes) {
         totalTrips ++;
+        totalMinutes += minutes;
     }
 
-    //Delete trips
-    public void deleteTrip() {
-    }
-
-    //Show All trips
-    public void showTrips(){
+    //Show All trips that we have completed
+    public void showTrips() {
         System.out.println("Total Trips: " + totalTrips);
+        System.out.println("Commute time " + totalMinutes);
     }
 
 
-}//end commute tracker class
+}
