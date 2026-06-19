@@ -12,6 +12,7 @@ public class CommuteTracker {
     public void showTrips() {
         System.out.println("Total Trips: " + totalTrips);
         System.out.println("Commute time " + totalMinutes);
+        System.out.println("Average commute: Coming Soon");
     }
 
 
