@@ -15,5 +15,9 @@ public class CommuteTracker {
         System.out.println("Average commute: Coming Soon");
     }
 
+    public int getTotalTrips() {
+        return totalTrips;
+    }
+
 
 }
