@@ -15,6 +15,12 @@ public class CommuteTracker {
         System.out.println("Average commute: Coming Soon");
     }
 
+    // Add day of week for table
+    public void dayOfWeel(){
+        System.out.println("What day of the week is it?");
+    }
+
+
     public int getTotalTrips() {
         return totalTrips;
     }
