@@ -1,6 +1,9 @@
+import java.util.Scanner;
+
 public class CommuteTracker {
     int totalTrips = 0;
     int totalMinutes = 0;
+    String day = Scanner.nextln();
 
     //Track every trip we take
     public void addTrip(int minutes) {
@@ -16,8 +19,8 @@ public class CommuteTracker {
     }
 
     // Add day of week for table
-    public void dayOfWeel(){
-        System.out.println("What day of the week is it?");
+    public void addDayOfWeek(){
+
     }
 
 
