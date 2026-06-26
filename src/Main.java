@@ -6,7 +6,6 @@ public class Main {
     CommuteTracker tracker = new CommuteTracker();
     //Utilize Scanner so we can get user input
     Scanner scanner = new Scanner(System.in);
-    System.out.println("What day of the week is it?");
 
     // grab user input so we can track minutes and update totalMinutes variable
     System.out.println("Enter commute minutes");
