@@ -4,7 +4,7 @@ public class CommuteTracker {
 
     //Track every trip we take
     public void addTrip(int minutes) {
-        totalTrips ++;
+        totalTrips++;
         totalMinutes += minutes;
     }
 
