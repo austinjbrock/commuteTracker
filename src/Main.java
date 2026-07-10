@@ -11,8 +11,11 @@ public class Main {
             // grab user input so we can track minutes and update totalMinutes variable
             System.out.println("Enter commute minutes");
             int minutes = scanner.nextInt();
+
             System.out.println("What day was this commute?");
             String dayOfWeek = scanner.next();
+
+            Trip trip = new Trip(dayOfWeek,minutes);
 
             tracker.addTrip(minutes,dayOfWeek);
 
