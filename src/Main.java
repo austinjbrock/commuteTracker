@@ -9,7 +9,7 @@ public class Main {
     Scanner scanner = new Scanner(System.in);
     String answer = "y";
         while (answer.equals("y")) {
-            // grab user input so we can track minutes and update totalMinutes variable
+            // grab user input s we can track minutes and update totalMinutes variable
             System.out.println("Enter commute minutes below");
             int minutes = scanner.nextInt();
 
@@ -18,7 +18,7 @@ public class Main {
 
             Trip trip = new Trip(dayOfWeek,minutes);
 
-            tracker.addTrip(minutes,dayOfWeek);
+            tracker.addTrip(trip);
 
             System.out.println("Trip Added for " + dayOfWeek);
             System.out.print("Add another trip? (y/n): ");

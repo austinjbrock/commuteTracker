@@ -4,10 +4,8 @@ public class CommuteTracker {
     String lastDayOfWeek = "";
 
     //Track every trip we take
-    public void addTrip(int minutes, String dayOfWeek) {
+    public void addTrip(Trip trip) {
         totalTrips++;
-        totalMinutes += minutes;
-        lastDayOfWeek = dayOfWeek;
     }
 
     //Show All trips that we have completed
