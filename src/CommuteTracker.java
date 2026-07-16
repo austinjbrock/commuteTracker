@@ -6,6 +6,8 @@ public class CommuteTracker {
     //Track every trip we take
     public void addTrip(Trip trip) {
         totalTrips++;
+        totalMinutes = trip.minutes;
+        lastDayOfWeek = trip.dayOfWeek;
     }
 
     //Show All trips that we have completed
