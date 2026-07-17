@@ -1,9 +1,11 @@
 public class Trip {
     int minutes;
     String dayOfWeek;
-    public Trip(String dayOfWeek, int minutes) {
+    String commuteType;
+    public Trip(String dayOfWeek, int minutes, String commuteType) {
         this.minutes = minutes;
         this.dayOfWeek = dayOfWeek;
+        this.commuteType = commuteType;
     }
 
 

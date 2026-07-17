@@ -15,8 +15,9 @@ public class Main {
 
             System.out.println("What day was this commute?");
             String dayOfWeek = scanner.next();
-
-            Trip trip = new Trip(dayOfWeek,minutes);
+            System.out.println("AM commute or PM? ");
+            String commuteType = scanner.next();
+            Trip trip = new Trip(dayOfWeek,minutes,commuteType);
 
             tracker.addTrip(trip);
 
