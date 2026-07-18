@@ -5,7 +5,7 @@ public class Main {
     public static void main(String [] args){
         System.out.println("Welcome To Commute Tracker");
     CommuteTracker tracker = new CommuteTracker();
-    //Utilize Scanner so we can get user input
+    //Utilize Scanner so for user input
     Scanner scanner = new Scanner(System.in);
     String answer = "y";
         while (answer.equals("y")) {
@@ -17,6 +17,10 @@ public class Main {
             String dayOfWeek = scanner.next();
             System.out.println("AM commute or PM? ");
             String commuteType = scanner.next();
+            while(!commuteType.equalsIgnoreCase("AM") && !commuteType.equalsIgnoreCase("PM")){
+                System.out.println("Invalid Input. Please Enter AM or PM.");
+                commuteType = scanner.next();
+            }
             Trip trip = new Trip(dayOfWeek,minutes,commuteType);
 
             tracker.addTrip(trip);
