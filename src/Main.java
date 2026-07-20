@@ -25,9 +25,9 @@ public class Main {
             System.out.println("Where are you departing from?");
             String departureStation = scanner.next();
             System.out.println("Where are you arriving?");
-            String arrivalDestination = scanner.next();
+            String arrivalStation = scanner.next();
 
-            Trip trip = new Trip(dayOfWeek,minutes,commuteType,departureStation,arrivalDestination);
+            Trip trip = new Trip(dayOfWeek,minutes,commuteType,departureStation,arrivalStation);
 
             tracker.addTrip(trip);
 
