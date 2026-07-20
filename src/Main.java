@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
@@ -21,7 +22,12 @@ public class Main {
                 System.out.println("Invalid Input. Please Enter AM or PM.");
                 commuteType = scanner.next();
             }
-            Trip trip = new Trip(dayOfWeek,minutes,commuteType);
+            System.out.println("Where are you departing from?");
+            String departureStation = scanner.next();
+            System.out.println("Where are you arriving?");
+            String arrivalDestination = scanner.next();
+
+            Trip trip = new Trip(dayOfWeek,minutes,commuteType,departureStation,arrivalDestination);
 
             tracker.addTrip(trip);
 
