@@ -12,5 +12,12 @@ public class Trip {
         this.arrivalStation = arrivalStation;
     }
 
+    public String getDepartureStation() {
+        return departureStation;
+    }
+
+    public String getArrivalStation(){
+        return arrivalStation;
+    }
 
 }

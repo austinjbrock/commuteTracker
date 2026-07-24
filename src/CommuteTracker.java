@@ -1,14 +1,19 @@
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.SortedMap;
-
 public class CommuteTracker {
     int totalTrips = 0;
     int totalMinutes = 0;
     String lastDayOfWeek = "";
     String departureStation = "";
     String arrivalStation = "";
+    //Store every trip so user can see a log
+
+    ArrayList<Trip> trips = new ArrayList<>();
 
     //Track every trip we take
     public void addTrip(Trip trip) {
+        trips.add(trip);
         totalTrips++;
         totalMinutes += trip.minutes;
         lastDayOfWeek = trip.dayOfWeek;
